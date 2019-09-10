@@ -1,0 +1,48 @@
+The databases and codes are provided to reproduce the results reported in our AAAI15 Paper. 
+
+Xi Peng, Zhang Yi, and Huajin Tang. 
+Robust Subspace Clustering via Thresholding Ridge Regression. 
+The Twenty-Ninth AAAI Conference on Artificial Intelligence (AAAI), Austin, Texas, USA, January 25--29, 2015.
+
+If you would like to reproduce the result, please assign the parameters with the value reported in the paper, otherwise, specify some possible values for the parameters.
+
+If you used the codes or data sets, please approximately cite our works.
+
+
+========================Configuration========================
+---The codes were produced in MATLAB2012a 64 bit. 
+
+-The Accuracy and NMI may fluctuate in the range of [-1% 1%] owing to effects of k-means clustering method.
+
+-If have any problem, welcome to contact with me via pangsaai[at][dot]gmail[dot]com
+
+
+========================Data========================
+Some used data sets. 
+
+
+======================== usages ========================
+Some codes sharing by the tested methods.
+1. accuracy.m: calculate the clustering Accuracy of the tested method;
+2. nmi.m: calculate the NMI of the tested method;
+3. CalMetricOfCluster.m: compute the clustering quality of the tested method;
+4. BuildAdjacency.m: build a graph using $k$-nearest neighbors;
+5. Eigenface_f.m and FeatureEx.m: reduce the dim. of the data using PCA;
+6. hungarian.m: best map between predict label and ground truth;
+7. litekmeans.m: k-means clustering algorithm;
+8. SC.m: normalized spectral clustering algorithm.
+
+
+========================0-TRR========================
+The implementation of our method, i.e., Thresholding Ridge Regression. 
+
+1. TRR_main.m: the main file of TRR, please set the parameters in this file;
+2. L2_code_vector.m: encode and cluster the given data set by TRR.
+3. AnalyzeResult_L2_ImgClustering.m: As the name implies, run it to analyze the result of TRR with different parameter combinations.
+
+
+
+
+
+
+
